@@ -28,6 +28,18 @@
             color: #000;
             background: transparent;
         }
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: block;
+        }
+        .form-control.is-invalid {
+            border-color: #dc3545;
+        }
+        .form-control.is-valid {
+            border-color: #28a745;
+        }
     </style>
 </head>
 <body>
@@ -50,14 +62,16 @@
 
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="login" role="tabpanel">
-                        <form>
+                        <form onsubmit="return validateLogin()">
                             <div class="mb-3">
-                                <label for="loginEmail" class="form-label">Email</label>
+                                <label for="loginEmail" class="form-label">Email <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                                <span id="emailError" class="error-message"></span>
                             </div>
                             <div class="mb-3">
-                                <label for="loginPassword" class="form-label">Password</label>
+                                <label for="loginPassword" class="form-label">Password <span class="text-danger">*</span></label>
                                 <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                                <span id="passwordError" class="error-message"></span>
                             </div>
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div class="form-check">
@@ -95,28 +109,61 @@
                     </div>
 
                     <div class="tab-pane fade" id="signup" role="tabpanel">
-                        <form>
-                            <div class="mb-3">
-                                <label for="signupName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="signupName" placeholder="Enter your full name">
+                        <form onsubmit="return validateRegister()">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                                    <span id="firstErr" class="error-message"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                                    <span id="lastErr" class="error-message"></span>
+                                </div>
                             </div>
                             <div class="mb-3">
-                                <label for="signupEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email">
+                                <label for="regEmail" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="regEmail" placeholder="Enter your email">
+                                <span id="emailErr" class="error-message"></span>
                             </div>
                             <div class="mb-3">
-                                <label for="signupPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="signupPassword" placeholder="Create a password">
+                                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter 10-digit phone number" maxlength="10">
+                                <span id="phoneErr" class="error-message"></span>
                             </div>
                             <div class="mb-3">
-                                <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm your password">
+                                <label for="regPassword" class="form-label">Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="regPassword" placeholder="Create a password (6-12 characters)">
+                                <small class="text-muted">Must contain at least 1 letter and 1 number</small>
+                                <span id="passErr" class="error-message"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                                <span id="cpassErr" class="error-message"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label">City <span class="text-danger">*</span></label>
+                                <select class="form-select" id="city">
+                                    <option value="">Select your city</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Kolkata">Kolkata</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                </select>
+                                <span id="cityErr" class="error-message"></span>
                             </div>
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" id="agreeTerms">
-                                <label class="form-check-label small" for="agreeTerms">
-                                    I agree to the <a href="terms.html" class="text-decoration-none">Terms & Conditions</a>
+                                <input class="form-check-input" type="checkbox" id="terms">
+                                <label class="form-check-label small" for="terms">
+                                    I agree to the <a href="terms.html" class="text-decoration-none" target="_blank">Terms & Conditions</a> and <a href="privacy.html" class="text-decoration-none" target="_blank">Privacy Policy</a> <span class="text-danger">*</span>
                                 </label>
+                                <span id="termsErr" class="error-message d-block"></span>
                             </div>
                             <button type="submit" class="btn btn-dark w-100 mb-3">Sign Up</button>
                         </form>
@@ -150,8 +197,13 @@
         <div class="text-center mt-3">
             <a href="index.html" class="text-decoration-none text-muted">← Back to Home</a>
         </div>
+        
+        <div class="text-center mt-2">
+            <small class="text-muted">Are you an admin? <a href="../admin/dashboard.html" class="text-decoration-none">Admin Login</a></small>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/auth.js"></script>
 </body>
 </html>
