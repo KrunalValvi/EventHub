@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theaters & Venues - Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="bg-light">
+    <div class="d-flex">
+        <div class="sidebar">
+            <div class="p-3">
+                <h5 class="mb-4">Admin Panel</h5>
+                <a href="dashboard.html" class="text-decoration-none text-dark"><div class="sidebar-item">Dashboard</div></a>
+                <a href="manage-events.html" class="text-decoration-none text-dark"><div class="sidebar-item">Events</div></a>
+                <a href="manage-movies.html" class="text-decoration-none text-dark"><div class="sidebar-item">Movies</div></a>
+                <a href="manage-users.html" class="text-decoration-none text-dark"><div class="sidebar-item">Users</div></a>
+                <a href="view-bookings.html" class="text-decoration-none text-dark"><div class="sidebar-item">Bookings</div></a>
+                <div class="sidebar-item active">
+                    Venues
+                </div>
+                <a href="settings.html" class="text-decoration-none text-dark"><div class="sidebar-item">Settings</div></a>
+            </div>
+        </div>
+        <div class="main-content flex-grow-1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Venue Name</th>
+                                    <th>City</th>
+                                    <th>Address</th>
+                                    <th>Capacity</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Grand Theater</strong></td>
+                                    <td>New York</td>
+                                    <td>123 Broadway St, NY 10001</td>
+                                    <td>500</td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-outline-primary me-1" title="Edit">Edit</a>
+                                        <button class="btn btn-sm btn-outline-danger" title="Delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cinema Plaza</strong></td>
+                                    <td>Los Angeles</td>
+                                    <td>456 Hollywood Blvd, CA 90028</td>
+                                    <td>300</td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-outline-primary me-1" title="Edit">Edit</a>
+                                        <button class="btn btn-sm btn-outline-danger" title="Delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Royal Opera House</strong></td>
+                                    <td>Chicago</td>
+                                    <td>789 State St, IL 60601</td>
+                                    <td>800</td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-outline-primary me-1" title="Edit">Edit</a>
+                                        <button class="btn btn-sm btn-outline-danger" title="Delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Downtown Multiplex</strong></td>
+                                    <td>Miami</td>
+                                    <td>321 Ocean Dr, FL 33139</td>
+                                    <td>250</td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-outline-primary me-1" title="Edit">Edit</a>
+                                        <button class="btn btn-sm btn-outline-danger" title="Delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Metro Event Center</strong></td>
+                                    <td>Seattle</td>
+                                    <td>654 Pine St, WA 98101</td>
+                                    <td>1200</td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-outline-primary me-1" title="Edit">Edit</a>
+                                        <button class="btn btn-sm btn-outline-danger" title="Delete">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <small class="text-muted">Showing 1 to 5 of 12 venues</small>
+                        <nav>
+                            <ul class="pagination pagination-sm mb-0">
+                                <li class="page-item disabled"><a class="page-link" href="#"><</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+

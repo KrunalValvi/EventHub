@@ -1,0 +1,173 @@
+/* Client/User-Facing Styles */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #3498db;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #3498db;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.btn-outline-primary {
+    border-color: #3498db;
+    color: #3498db;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0 20px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* Category Pills */
+.category-pill {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    margin: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.category-pill:hover {
+    background: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Movie/Event Cards */
+.movie-card,
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-card img,
+.event-card img {
+    transition: transform 0.3s;
+}
+
+.movie-card:hover img,
+.event-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Rating Stars */
+.rating {
+    color: #f39c12;
+}
+
+/* Search Bar */
+.search-bar {
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Price Tag */
+.price-tag {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #27ae60;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - EventHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="border-bottom py-2 bg-white">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="fw-bold fs-4 text-dark text-decoration-none">EventHub</a>
+            <form class="flex-grow-1 mx-4">
+                <input class="form-control" type="search" placeholder="Search for Movies, Events, Plays..." aria-label="Search">
+            </form>
+            <select class="form-select w-auto me-2">
+                <option>Ahmedabad</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+            </select>
+            <a href="sign-up.html" class="btn btn-outline-primary ms-2">Sign In</a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="movies-listing.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events-listing.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sports-listing.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plays-listing.html">Plays</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-3">
+                <div>
+                    <h2 class="mb-1">Movies in Ahmedabad</h2>
+                    <p class="text-muted mb-0">Book tickets for the latest releases</p>
+                </div>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+                    <span class="text-muted">Sort by:</span>
+                    <select class="form-select form-select-sm w-auto">
+                        <option selected>Popularity</option>
+                        <option>Release Date</option>
+                        <option>Alphabetical</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="fw-semibold">Languages:</span>
+                <button class="btn btn-sm btn-dark">Hindi</button>
+                <button class="btn btn-sm btn-outline-secondary">English</button>
+                <button class="btn btn-sm btn-outline-secondary">Gujarati</button>
+                <button class="btn btn-sm btn-outline-secondary">Tamil</button>
+                <button class="btn btn-sm btn-outline-secondary">Telugu</button>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="fw-semibold">Formats:</span>
+                <button class="btn btn-sm btn-outline-secondary">2D</button>
+                <button class="btn btn-sm btn-outline-secondary">3D</button>
+                <button class="btn btn-sm btn-outline-secondary">IMAX</button>
+                <button class="btn btn-sm btn-outline-secondary">4DX</button>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="fw-semibold">Genres:</span>
+                <button class="btn btn-sm btn-outline-secondary">Action</button>
+                <button class="btn btn-sm btn-outline-secondary">Comedy</button>
+                <button class="btn btn-sm btn-outline-secondary">Drama</button>
+                <button class="btn btn-sm btn-outline-secondary">Thriller</button>
+                <button class="btn btn-sm btn-outline-secondary">Horror</button>
+                <button class="btn btn-sm btn-outline-secondary">Romance</button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Action Blockbuster</h6>
+                                <small class="text-muted">U/A • Hindi • Action</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Romantic Saga</h6>
+                                <small class="text-muted">U • English • Romance</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Comedy Nights</h6>
+                                <small class="text-muted">U • Hindi • Comedy</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Sci‑Fi Universe</h6>
+                                <small class="text-muted">U/A • English • Sci‑Fi</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Mystery Thriller</h6>
+                                <small class="text-muted">A • Hindi • Thriller</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Family Drama</h6>
+                                <small class="text-muted">U • Gujarati • Drama</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Horror Night</h6>
+                                <small class="text-muted">A • English • Horror</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="movie-detail.html" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 260px;">Poster</div>
+                            <div class="card-body">
+                                <h6 class="card-title mb-1">Animated Fun</h6>
+                                <small class="text-muted">U • English • Animation</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>EventHub</h5>
+                    <p>Your premier destination for entertainment booking</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>About</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Press</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    
+                </div>
+            </div>
+            <hr class="bg-white my-3">
+            <p class="text-center mb-0">&copy; 2025 EventHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Events - EventHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="border-bottom py-2 bg-white">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="fw-bold fs-4 text-dark text-decoration-none">EventHub</a>
+            <form class="flex-grow-1 mx-4">
+                <input class="form-control" type="search" placeholder="Search for Events, Movies, Plays..." aria-label="Search">
+            </form>
+            <select class="form-select w-auto me-2">
+                <option>Ahmedabad</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+            </select>
+            <a href="sign-up.html" class="btn btn-outline-primary ms-2">Sign In</a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="movies-listing.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events-listing.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sports-listing.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plays-listing.html">Plays</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="mb-1">Sports Events in Ahmedabad</h2>
+                    <p class="text-muted mb-0">Book tickets for live sports events</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="fw-semibold">Categories:</span>
+                <button class="btn btn-sm btn-dark">All Sports</button>
+                <button class="btn btn-sm btn-outline-secondary">Cricket</button>
+                <button class="btn btn-sm btn-outline-secondary">Football</button>
+                <button class="btn btn-sm btn-outline-secondary">Basketball</button>
+                <button class="btn btn-sm btn-outline-secondary">Tennis</button>
+                <button class="btn btn-sm btn-outline-secondary">Badminton</button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Cricket</span>
+                                <small class="text-muted">Jan 20, 2025</small>
+                            </div>
+                            <h6 class="card-title">IPL 2025 Match</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Narendra Modi Stadium
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Football</span>
+                                <small class="text-muted">Jan 22, 2025</small>
+                            </div>
+                            <h6 class="card-title">ISL Football Match</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Sports Complex
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Basketball</span>
+                                <small class="text-muted">Jan 25, 2025</small>
+                            </div>
+                            <h6 class="card-title">Pro Basketball League</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Indoor Stadium
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Tennis</span>
+                                <small class="text-muted">Jan 28, 2025</small>
+                            </div>
+                            <h6 class="card-title">Tennis Championship</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Tennis Club
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Badminton</span>
+                                <small class="text-muted">Feb 1, 2025</small>
+                            </div>
+                            <h6 class="card-title">Badminton Premier League</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Badminton Arena
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Cricket</span>
+                                <small class="text-muted">Feb 5, 2025</small>
+                            </div>
+                            <h6 class="card-title">T20 World Cup Match</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Sardar Patel Stadium
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Football</span>
+                                <small class="text-muted">Feb 8, 2025</small>
+                            </div>
+                            <h6 class="card-title">Champions League</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                Football Stadium
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-light text-dark">Tennis</span>
+                                <small class="text-muted">Feb 12, 2025</small>
+                            </div>
+                            <h6 class="card-title">Grand Slam Tournament</h6>
+                            <p class="card-text text-muted mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                </svg>
+                                National Tennis Center
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>EventHub</h5>
+                    <p>Your premier destination for entertainment booking</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>About</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Press</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    
+                </div>
+            </div>
+            <hr class="bg-white my-3">
+            <p class="text-center mb-0">&copy; 2025 EventHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

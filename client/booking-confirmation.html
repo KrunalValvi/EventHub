@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed - EventHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="text-center mb-4">
+                    <div class="bg-dark rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                        </svg>
+                    </div>
+                    <h2 class="mb-2">Booking Confirmed!</h2>
+                    <p class="text-muted">Your tickets have been successfully booked</p>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Booking Details</h5>
+                        
+                        <div class="row mb-3">
+                            <div class="col-6 text-muted">Movie/Event:</div>
+                            <div class="col-6 text-end fw-semibold">Avengers: Endgame</div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-6 text-muted">Venue:</div>
+                            <div class="col-6 text-end">Cinema Plaza Mall</div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-6 text-muted">Date:</div>
+                            <div class="col-6 text-end">March 15, 2025</div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-6 text-muted">Time:</div>
+                            <div class="col-6 text-end">7:30 PM</div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-6 text-muted">Seat Numbers:</div>
+                            <div class="col-6 text-end">A12, A13</div>
+                        </div>
+                        
+                        <div class="row mb-0">
+                            <div class="col-6 text-muted">Amount Paid:</div>
+                            <div class="col-6 text-end fw-bold">$24.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body text-center py-5">
+                        <div class="bg-secondary d-inline-flex align-items-center justify-content-center mb-3" style="width: 200px; height: 200px; border-radius: 8px;">
+                            <span class="text-white">QR Code</span>
+                        </div>
+                        <p class="text-muted small mb-0">Show this at the venue to enter</p>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <button class="btn btn-dark btn-lg w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download me-2" viewBox="0 0 16 16">
+                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                            </svg>
+                            Download Ticket
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="my-bookings.html" class="btn btn-outline-dark btn-lg w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul me-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            Go to My Bookings
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card bg-light border-0">
+                    <div class="card-body">
+                        <h6 class="card-title mb-3">Important Information:</h6>
+                        <ul class="mb-0 small">
+                            <li class="mb-2">Please arrive 15 minutes before showtime</li>
+                            <li class="mb-2">Tickets are non-refundable</li>
+                            <li class="mb-0">Present QR code or downloaded ticket at entrance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="index.html" class="text-decoration-none">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

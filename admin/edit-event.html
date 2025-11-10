@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event - Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="bg-light">
+    <div class="d-flex">
+        <div class="sidebar">
+            <div class="p-3">
+                <h5 class="mb-4">Admin Panel</h5>
+                <a href="dashboard.html" class="text-decoration-none text-dark">
+                    <div class="sidebar-item">
+                        Dashboard
+                    </div>
+                </a>
+                <div class="sidebar-item active">
+                    Events
+                </div>
+                <a href="manage-movies.html" class="text-decoration-none text-dark">
+                    <div class="sidebar-item">
+                        Movies
+                    </div>
+                </a>
+                <a href="manage-users.html" class="text-decoration-none text-dark">
+                    <div class="sidebar-item">
+                        Users
+                    </div>
+                </a>
+                <a href="view-bookings.html" class="text-decoration-none text-dark">
+                    <div class="sidebar-item">
+                        Bookings
+                    </div>
+                </a>
+                <a href="theaters.html" class="text-decoration-none text-dark">
+                    <div class="sidebar-item">
+                        Venues
+                    </div>
+                </a>
+                <a href="settings.html" class="text-decoration-none text-dark">
+                    <div class="sidebar-item">
+                        Settings
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-content flex-grow-1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title mb-0">Event Information</h5>
+                        <small class="text-muted">Fields marked with * are required</small>
+                    </div>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="eventTitle" class="form-label">Event Title*</label>
+                                <input type="text" class="form-control" id="eventTitle" placeholder="Enter event title" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="eventDate" class="form-label">Date*</label>
+                                <input type="date" class="form-control" id="eventDate" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="eventTime" class="form-label">Time*</label>
+                                <input type="time" class="form-control" id="eventTime" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="eventDescription" class="form-label">Event Description*</label>
+                                <textarea class="form-control" id="eventDescription" rows="5" placeholder="Provide a detailed description of the event..." required></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventVenue" class="form-label">Venue*</label>
+                                <select class="form-select mb-3" id="eventVenue" required>
+                                    <option value="">Select a venue</option>
+                                    <option>Central Park Amphitheater</option>
+                                    <option>Convention Center</option>
+                                    <option>Exhibition Hall A</option>
+                                    <option>Modern Art Museum</option>
+                                    <option>Sports Arena</option>
+                                </select>
+                                <label class="form-label">Event Poster</label>
+                                <div class="upload-area">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="text-secondary mb-2" viewBox="0 0 16 16">
+                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                        <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                                    </svg>
+                                    <p class="mb-1"><strong>Upload Poster Image</strong></p>
+                                    <small class="text-muted">PNG, JPG up to 10MB</small>
+                                    <input type="file" class="d-none" accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="eventCategory" class="form-label">Category*</label>
+                                <select class="form-select" id="eventCategory" required>
+                                    <option value="">Select a category</option>
+                                    <option>Concert</option>
+                                    <option>Conference</option>
+                                    <option>Exhibition</option>
+                                    <option>Sports</option>
+                                    <option>Theater</option>
+                                    <option>Festival</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="maxAttendees" class="form-label">Maximum Attendees</label>
+                                <input type="number" class="form-control" id="maxAttendees" placeholder="Enter maximum number of attendees">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <a href="manage-events.html" class="btn btn-outline-secondary">Cancel</a>
+                            <button type="submit" class="btn btn-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1" viewBox="0 0 16 16">
+                                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                </svg>
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.upload-area').addEventListener('click', function() {
+            this.querySelector('input[type="file"]').click();
+        });
+    </script>
+</body>
+</html>
+
+
+

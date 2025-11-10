@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="border-bottom py-2 bg-white">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="fw-bold fs-4">EventHub</div>
+            <form class="flex-grow-1 mx-4">
+                <input class="form-control" type="search" placeholder="Search for Events, Movies, Plays..." aria-label="Search">
+            </form>
+            <select class="form-select w-auto me-2">
+                <option>Ahmedabad</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+            </select>
+            <a href="client/sign-up.html" class="btn btn-outline-primary ms-2">Sign In</a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="client/movies-listing.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="client/events-listing.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="client/sports-listing.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="client/plays-listing.html">Plays</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselBanner" class="carousel slide bg-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex align-items-center justify-content-center text-white" style="height: 400px;">
+                    <h2>Featured Banner Carousel</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center text-white" style="height: 400px;">
+                    <h2>Banner 2</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center text-white" style="height: 400px;">
+                    <h2>Banner 3</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center text-white" style="height: 400px;">
+                    <h2>Banner 4</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Recommended Movies</h4>
+                <a href="client/movies-listing.html" class="text-decoration-none">See All</a>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">Movie Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Movie Title</h6>
+                            <small class="text-muted">Genre/Release</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">Movie Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Movie Title</h6>
+                            <small class="text-muted">Genre/Release</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">Movie Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Movie Title</h6>
+                            <small class="text-muted">Genre/Release</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">Movie Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Movie Title</h6>
+                            <small class="text-muted">Genre/Release</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">Movie Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Movie Title</h6>
+                            <small class="text-muted">Genre/Release</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 250px;">Movie Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Movie Title</h6>
+                            <small class="text-muted">Genre/Release</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Best of Live Events</h4>
+                <a href="client/events-listing.html" class="text-decoration-none">See All</a>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Event Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Concert Event</h6>
+                            <small class="text-muted">Mumbai</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Event Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Stand-up Comedy</h6>
+                            <small class="text-muted">Comedy</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Event Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Art Exhibition</h6>
+                            <small class="text-muted">Art/Culture</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Event Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Food Festival</h6>
+                            <small class="text-muted">Food/Drink</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Event Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Tech Conference</h6>
+                            <small class="text-muted">Technology</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Top Sports Events</h4>
+                <a href="client/sports-listing.html" class="text-decoration-none">See All</a>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Cricket Match</h6>
+                            <small class="text-muted">Cricket</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Football League</h6>
+                            <small class="text-muted">Football</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Basketball Tournament</h6>
+                            <small class="text-muted">Basketball</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Sports Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Tennis Championship</h6>
+                            <small class="text-muted">Tennis</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Popular Plays</h4>
+                <a href="client/plays-listing.html" class="text-decoration-none">See All</a>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Play Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Theatre Drama</h6>
+                            <small class="text-muted">Drama</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Play Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Musical Theatre</h6>
+                            <small class="text-muted">Musical</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Play Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Comedy Show</h6>
+                            <small class="text-muted">Comedy</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">Play Poster</div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Classical Play</h6>
+                            <small class="text-muted">Classical</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>EventHub</h5>
+                    <p>Your premier destination for entertainment and events.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>About</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="client/about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Press</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="client/contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="client/faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li><a href="client/terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i>Facebook</a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i>Twitter</a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i>Instagram</a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i>YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p class="text-center mb-0">&copy; 2025 EventHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
